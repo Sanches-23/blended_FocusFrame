@@ -5,212 +5,276 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FocusFrame</title>
+    <!--    <meta name="keywords" content="WebStudio business customers sales marketing growth solution">-->
+    <!--    <meta name="description" content="WebStudio is the best company for your business.">-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+          integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
 <header>
-    <a href="./index.html"><img src="./public/svg/logo.svg" alt="FocusFrame"></a>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about_us">About us</a>
-            </li>
-            <li>
-                <a href="#our_courses">Our courses</a>
-            </li>
-            <li>
-                <a href="#our_mentors">Our mentors</a>
-            </li>
-            <li>
-                <a href="#reviews">Reviews</a>
-            </li>
-            <li>
-                <a href="#contacts">Contacts</a>
-            </li>
-        </ul>
-    </nav>
-    <button type="button">Sign up</button>
-
+    <div class="container">
+        <a href="./index.html"><img src="./public/svg/logo.svg" alt="FocusFrame"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about_us">About us</a>
+                </li>
+                <li>
+                    <a href="#our_courses">Our courses</a>
+                </li>
+                <li>
+                    <a href="#our_mentors">Our mentors</a>
+                </li>
+                <li>
+                    <a href="#reviews">Reviews</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button">Sign up</button>
+    </div>
 </header>
 <main>
     <!--Hero-->
-    <section id="hero">
-        <h1>Discover the magic of <span>photography</span> in our school</h1>
-        <p>Our photography school offers an unforgettable journey, where you can learn the basics of composition, master
-            technical skills, translate your unique ideas.</p>
-        <ul>
-            <li>
-                <ul>
-                    <li><img src="public/images/hero_section/hero_avatar_girl1.jpg" alt="hero_girl1" width="54"
-                             height="54"></li>
-                    <li><img src="public/images/hero_section/hero_avatar_boy.jpg" alt="hero_boy" width="54" height="54">
-                    </li>
-                    <li><img src="public/images/hero_section/hero_avatar_girl2.jpg" alt="hero_girl2" width="54"
-                             height="54"></li>
-                </ul>
-                <a href="#students">
-                    <p>Our happy students</p>
-                    <img src="./public/svg/arrow_right.svg" alt="arrow_right" width="18" height="9">
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Discover the magic of <span class="text-accent">photography</span> in our school</h1>
+            <p class="hero-desc">Our photography school offers an unforgettable journey, where you can learn the basics
+                of composition, master technical skills, translate your unique ideas.</p>
+            <div class="hero-reviews">
+                <div class="hero-reviews-students">
+                    <ul class="students-list">
+                        <li class="students-item">
+                            <img src="public/images/hero_section/hero_student_girl1.png" alt="hero_girl1" width="54"
+                                 height="54">
+                        </li>
+                        <li class="hero-student-item">
+                            <img src="public/images/hero_section/hero_student_boy.png" alt="hero_boy" width="54"
+                                 height="54">
+                        </li>
+                        <li class="hero-student-item">
+                            <img src="public/images/hero_section/hero_student_girl2.png" alt="hero_girl2" width="54"
+                                 height="54">
+                        </li>
+                    </ul>
+                    <a class="students-link" href="#students">
+                        <span class="students-link-desc">Our happy students</span>
+                        <svg class="students-icon" width="18" height="9">
+                            <use href="./public/svg/small_icons.svg#arrow_right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a class="reviews-box" href="#reviews">
+                    <svg class="reviews-icon" width="50" height="50">
+                        <use href="./public/svg/small_icons.svg#star_outline"></use>
+                    </svg>
+                    <div class="reviews-stats">
+                        <span class="reviews-title">Reviews</span>
+                        <span class="reviews-count">+1500</span>
+                    </div>
                 </a>
-            </li>
-            <li>
-                <a href="#reviews">
-                    <img src="./public/svg/circle_star.svg" alt="star" width="50" height="50">
-                    <p>Reviews</p>
-                    <p>+1500</p>
-                </a>
-            </li>
-        </ul>
-        <img src="public/images/hero_section/hero_photographer.avif" alt="photographer">
+            </div>
+            <img class="hero-photographer" src="public/images/hero_section/hero_photographer.avif" alt="photographer">
+        </div>
     </section>
+    <!--Master-->
     <section>
         <h2>
-            <span>Master</span> your photography <span>skills with us!</span></h2>
+            <span>Master</span> your photography <span>skills with us!</span>
+        </h2>
     </section>
     <!--About-->
     <section id="about_us">
-        <h2>About <span>Us</span></h2>
-        <img src="./public/images/camera_about.png" alt="camera" width="560" height="240">
-        <p>Our photography school is designed to teach you everything you need to know about this magical art.
-            Regardless of your experience or skill level, we offer a wide range of courses to suit your needs
-            and interests. Our teaching team consists of experienced photographers who have many years of
-            experience in this field. They strive not only to share their knowledge, but also to inspire you to
-            develop and express your unique creativity.</p>
-        <p>Our courses cover a wide range of topics, from the basics of photography and equipment use to
-            professional image processing and creating impressive compositions. You will have the opportunity to
-            learn the technical aspects of photography, discover your own style and develop your own visual
-            language.</p>
+        <div class="container">
+            <h2>About <span>Us</span></h2>
+            <img src="./public/images/camera_about.png" alt="camera" width="560" height="240">
+            <p>Our photography school is designed to teach you everything you need to know about this magical art.
+                Regardless of your experience or skill level, we offer a wide range of courses to suit your needs
+                and interests. Our teaching team consists of experienced photographers who have many years of
+                experience in this field. They strive not only to share their knowledge, but also to inspire you to
+                develop and express your unique creativity.</p>
+            <p>Our courses cover a wide range of topics, from the basics of photography and equipment use to
+                professional image processing and creating impressive compositions. You will have the opportunity to
+                learn the technical aspects of photography, discover your own style and develop your own visual
+                language.</p>
+        </div>
     </section>
     <!--Courses-->
     <section id="our_courses">
-        <h2>Our <span>Courses</span></h2>
-        <p>At our photography school, we offer a variety of courses that cover all aspects of this fascinating
-            art. Regardless of your experience or skill level, we have courses to suit your needs and goals.</p>
-        <ul>
-            <li>
-                <p>01</p>
-                <img src="./public/svg/arrow_up_right.svg" alt="arrow up right" width="32" height="32">
-                <h3>Basics of photography</h3>
-                <p>During this course, you will be able to familiarize yourself with different types of cameras, learn
-                    the basics of composition.</p>
-            </li>
-            <li>
-                <p>02</p>
-                <img src="./public/svg/arrow_up_right.svg" alt="arrow up right" width="32" height="32">
-                <h3>Landscape photography</h3>
-                <p>In this course, you'll learn how to choose the right angles, frame landscapes, and create depth and
-                    perspective in your images.</p>
-            </li>
-            <li>
-                <p>03</p>
-                <img src="./public/svg/arrow_up_right.svg" alt="arrow up right" width="32" height="32">
-                <h3>Portrait photography</h3>
-                <p>During this course, you will learn to choose the right lighting, reproduce the mood and expressions
-                    on the faces of the models.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2>Our <span>Courses</span></h2>
+            <p>At our photography school, we offer a variety of courses that cover all aspects of this fascinating
+                art. Regardless of your experience or skill level, we have courses to suit your needs and goals.</p>
+            <ul>
+                <li>
+                    <p>01</p>
+                    <svg class="-icon" width="32" height="32">
+                        <use href="./public/svg/small_icons.svg#arrow_narrow_up_right"></use>
+                    </svg>
+                    <h3>Basics of photography</h3>
+                    <p>During this course, you will be able to familiarize yourself with different types of cameras,
+                        learn
+                        the basics of composition.</p>
+                </li>
+                <li>
+                    <p>02</p>
+                    <svg class="-icon" width="32" height="32">
+                        <use href="./public/svg/small_icons.svg#arrow_narrow_up_right"></use>
+                    </svg>
+                    <h3>Landscape photography</h3>
+                    <p>In this course, you'll learn how to choose the right angles, frame landscapes, and create depth
+                        and
+                        perspective in your images.</p>
+                </li>
+                <li>
+                    <p>03</p>
+                    <svg class="-icon" width="32" height="32">
+                        <use href="./public/svg/small_icons.svg#arrow_narrow_up_right"></use>
+                    </svg>
+                    <h3>Portrait photography</h3>
+                    <p>During this course, you will learn to choose the right lighting, reproduce the mood and
+                        expressions
+                        on the faces of the models.</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--Mentors-->
     <section id="our_mentors">
-        <h2>Our <span>Mentors</span></h2>
-        <ul>
-            <li><img src="./public/images/mentors_section/girl1.png" alt="Emilia Smith" width="180" height="180">
-                <h3>Emilia Smith</h3>
-                <p> 1.5 years of experience</p>
-            </li>
-            <li><img src="./public/images/mentors_section/boy1.png" alt="Alex Lebedev" width="180" height="180">
-                <h3>Alex Lebedev</h3>
-                <p> 3.5 years of experience</p>
-            </li>
-            <li><img src="./public/images/mentors_section/girl2.png" alt="Mia Dubrovska" width="180" height="180">
-                <h3>Mia Dubrovska</h3>
-                <p> 2.0 years of experience</p>
-            </li>
-            <li><img src="./public/images/mentors_section/boy2.png" alt="Eliot Kovalev" width="180" height="180">
-                <h3>Eliot Kovalev</h3>
-                <p> 4.0 years of experience</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2>Our <span>Mentors</span></h2>
+            <ul>
+                <li>
+                    <img src="./public/images/mentors_section/girl1.png" alt="Emilia Smith" width="180" height="180">
+                    <h3>Emilia Smith</h3>
+                    <p> 1.5 years of experience</p>
+                </li>
+                <li>
+                    <img src="./public/images/mentors_section/boy1.png" alt="Alex Lebedev" width="180" height="180">
+                    <h3>Alex Lebedev</h3>
+                    <p> 3.5 years of experience</p>
+                </li>
+                <li>
+                    <img src="./public/images/mentors_section/girl2.png" alt="Mia Dubrovska" width="180" height="180">
+                    <h3>Mia Dubrovska</h3>
+                    <p> 2.0 years of experience</p>
+                </li>
+                <li>
+                    <img src="./public/images/mentors_section/boy2.png" alt="Eliot Kovalev" width="180" height="180">
+                    <h3>Eliot Kovalev</h3>
+                    <p> 4.0 years of experience</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--Sign Up-->
     <section id="contacts">
-        <h2>Sign <span>Up</span></h2>
-        <p>Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
-            shortly.</p>
-        <p>By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use this information for
-            marketing purposes.</p>
-        <img src="./public/images/#" alt="cameras">
+        <div class="container">
+
+            <h2>Sign <span>Up</span></h2>
+            <p>Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
+                shortly.</p>
+            <p>By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use this information
+                for
+                marketing purposes.</p>
+            <img src="./public/images/#" alt="cameras">
+        </div>
     </section>
     <!--Reviews-->
     <section id="reviews">
-        <h2>Reviews</h2>
-        <ul>
-            <li><img src="./public/images/reviews_section/user1.png" alt="Abraham Baker" width="56" height="56">
-                <h3>Abraham Baker</h3>
-                <p>Student</p>
-                <img src="./public/svg/rating_4_stars.svg" alt="rate: 4 stars" width="116" height="20">
-                <p>I am very pleased that I decided to enroll in photography school. The teachers turned out to be very
-                    talented and experienced professionals who share their knowledge and are dedicated to their work. I
-                    was able to expand my skills and discover my own style.</p>
-            </li>
-            <li><img src="./public/images/reviews_section/user2.png" alt="Amanda Lowery" width="56" height="56">
-                <h3>Amanda Lowery</h3>
-                <p>Student</p>
-                <img src="./public/svg/rating_4_stars.svg" alt="rate: 4 stars" width="116" height="20">
-                <p>The courses at the photography school exceeded all my expectations. I gained not only technical
-                    knowledge, but also inspiration and motivation to reach new heights in my creativity. Hands-on
-                    classes and workshops helped me understand different styles of photography.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2>Reviews</h2>
+            <ul>
+                <li>
+                    <img src="./public/images/reviews_section/user1.png" alt="Abraham Baker" width="56" height="56">
+                    <h3>Abraham Baker</h3>
+                    <p>Student</p>
+                    <svg class="-icon" width="20" height="20">
+                        <use href="./public/svg/small_icons.svg#star_colored"></use>
+                    </svg>
+                    <p>I am very pleased that I decided to enroll in photography school. The teachers turned out to be
+                        very
+                        talented and experienced professionals who share their knowledge and are dedicated to their
+                        work. I
+                        was able to expand my skills and discover my own style.</p>
+                </li>
+                <li>
+                    <img src="./public/images/reviews_section/user2.png" alt="Amanda Lowery" width="56" height="56">
+                    <h3>Amanda Lowery</h3>
+                    <p>Student</p>
+                    <svg class="-icon" width="20" height="20">
+                        <use href="./public/svg/small_icons.svg#star_colored"></use>
+                    </svg>
+                    <p>The courses at the photography school exceeded all my expectations. I gained not only technical
+                        knowledge, but also inspiration and motivation to reach new heights in my creativity. Hands-on
+                        classes and workshops helped me understand different styles of photography.</p>
+                </li>
+            </ul>
+        </div>
     </section>
 </main>
 <footer>
-    <a href="./index.html"><img src="./public/svg/logo.svg" alt="FocusFrame"></a>
-    <address>
+    <div class="container">
+
+        <a href="./index.html"><img src="./public/svg/logo.svg" alt="FocusFrame"></a>
+        <address>
+            <ul>
+                <li>
+                    <a href="tel:+380665438912">+38 066 543 8912</a>
+                </li>
+                <li>
+                    <a href="#">1678 S. Pioneer Road Salt Lake City UT 84104</a>
+                </li>
+            </ul>
+        </address>
         <ul>
             <li>
-                <a href="tel:+380665438912">+38 066 543 8912</a>
+                <a href="#">Instagram</a>
             </li>
             <li>
-                <a href="#">1678 S. Pioneer Road Salt Lake City UT 84104</a>
+                <a href="#">Facebook</a>
+            </li>
+            <li>
+                <a href="#">Youtube</a>
             </li>
         </ul>
-    </address>
-    <ul>
-        <li>
-            <a href="#">Instagram</a>
-        </li>
-        <li>
-            <a href="#">Facebook</a>
-        </li>
-        <li>
-            <a href="#">Youtube</a>
-        </li>
-    </ul>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about_us">About us</a>
-            </li>
-            <li>
-                <a href="#our_courses">Our courses</a>
-            </li>
-            <li>
-                <a href="#our_mentors">Our mentors</a>
-            </li>
-            <li>
-                <a href="#reviews">Reviews</a>
-            </li>
-            <li>
-                <a href="#contacts">Contacts</a>
-            </li>
-        </ul>
-    </nav>
-    <input type="email" name="" id="" placeholder="Enter your email">
-    <button type="submit">Go</button>
-    <a href="#privacy">Privacy Policy</a>
-    <br>
-    <a href="#offering">Public Offering Agreement</a>
-    <p>2024 Focus Frame <br>&copy; All rights reserved</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about_us">About us</a>
+                </li>
+                <li>
+                    <a href="#our_courses">Our courses</a>
+                </li>
+                <li>
+                    <a href="#our_mentors">Our mentors</a>
+                </li>
+                <li>
+                    <a href="#reviews">Reviews</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="email" name="" id="" placeholder="Enter your email">
+        <button type="submit">Go</button>
+        <a href="#privacy">Privacy Policy</a>
+        <!--        <br>-->
+        <a href="#offering">Public Offering Agreement</a>
+        <p>2024 Focus Frame <br>&copy; All rights reserved</p>
+    </div>
 </footer>
 </body>
 </html>

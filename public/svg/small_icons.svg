@@ -1,0 +1,17 @@
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="star_outline" viewBox="0 0 20 20" fill="none">
+            <path stroke-width="1.5" stroke="currentColor" stroke-linejoin="round" d="M10 1.6667l2.575 5.2166 5.7584 0.8417-4.1667 4.0583 0.9833 5.7334L10 14.8083 4.85 17.5167l0.9833-5.7334L1.6667 7.725 7.425 6.8833z" />
+        </symbol>
+        <symbol id="arrow_right" viewBox="0 0 18 9" fill="none">
+            <path fill="currentColor" clip-rule="evenodd" d="M12.5 0 18 4.3301 12.5 8.6603V5.0801l-12.5 0v-1.5l12.5 0z" fill-rule="evenodd" />
+        </symbol>
+        <symbol id="arrow_narrow_up_right" viewBox="0 0 20 20" stroke-width="1.3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M5 15 15 5" />
+            <path d="M8.3333 5H15v6.6667" />
+        </symbol>
+        <symbol id="star_colored" viewBox="0 0 20 20" fill="none">
+            <path stroke-width="1.5" stroke="currentColor" stroke-linejoin="round" fill="currentColor" d="M10 2l2.472 4.9369L18 7.7334l-4 3.8407L14.944 17 10 14.4369 5.056 17 6 11.5741 2 7.7334 7.528 6.9369z" />
+        </symbol>
+    </defs>
+</svg>
