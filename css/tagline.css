@@ -1,0 +1,13 @@
+.tagline{
+    padding: 24px 0;
+    border-block: #414141 solid 1px;
+}
+.tagline-title{
+    font-weight: 400;
+    font-size: 59px;
+
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+}

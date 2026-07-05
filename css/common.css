@@ -11,6 +11,19 @@ main {
     flex-grow: 1;
 }
 
+h1, h2 {
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    line-height: 1.125;
+}
+
+p {
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
 .container {
     max-width: 1112px;
     padding: 0 16px;
