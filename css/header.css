@@ -1,0 +1,63 @@
+.header {
+    margin: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0 50px;
+    gap: 28px;
+}
+
+.header-logo {
+    padding: 21px 0;
+    flex-shrink: 0
+}
+
+.header-nav {
+
+}
+
+.header-menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu-item {
+
+}
+
+.menu-link {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 21px 0;
+}
+
+.header-btn {
+
+}
+
+.header-btn {
+    color: #121212;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.55;
+    text-transform: uppercase;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 240px;
+    min-width: 105px;
+    padding: 16px;
+}

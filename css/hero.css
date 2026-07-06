@@ -1,5 +1,5 @@
 .hero {
-    margin: 80px 0 150px;
+    margin: 50px 0 150px;
 }
 
 .hero-card {
@@ -14,7 +14,7 @@
 .hero-content {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 80px 20px 50px 50px;
 }
 
 .hero-title {
@@ -34,13 +34,12 @@
     font-size: 14px;
     max-width: 418px;
     line-height: 1.285;
-    margin-bottom: 20px;
+    margin-bottom: 136px;
 }
 
 .hero-reviews {
     display: flex;
     gap: 40px;
-    margin-top: auto;
 }
 
 .hero-reviews-students {
@@ -117,8 +116,13 @@
     letter-spacing: -0.04em;
 }
 
+.hero-image-wrapper {
+    display: flex;
+    align-self: flex-end;
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+
 .hero-photographer {
-    /*padding: 50px 20px;*/
-    /*width: 397px;*/
-    /*height: 520px;*/
+    object-fit: cover;
 }

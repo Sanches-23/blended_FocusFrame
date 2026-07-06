@@ -20,29 +20,34 @@
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
-<header>
-    <div class="container">
-        <a href="./index.html"><img src="./public/svg/logo.svg" alt="FocusFrame"></a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about_us">About us</a>
-                </li>
-                <li>
-                    <a href="#our_courses">Our courses</a>
-                </li>
-                <li>
-                    <a href="#our_mentors">Our mentors</a>
-                </li>
-                <li>
-                    <a href="#reviews">Reviews</a>
-                </li>
-                <li>
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button">Sign up</button>
+<header id="header" class="header">
+    <div class="container header-container">
+        <div class="header-content">
+            <a class="header-logo" href="./index.html">
+                <img class="logo" src="./public/svg/logo.svg" alt="FocusFrame" width="123" height="16">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#about_us">About us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#our_courses">Our courses</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#our_mentors">Our mentors</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <button class="header-btn" type="button">Sign up</button>
     </div>
 </header>
 <main>
@@ -51,8 +56,8 @@
         <div class="container">
             <div class="hero-card">
                 <div class="hero-content">
-                    <h1 class="hero-title">Discover the magic of&nbsp;<span class="text-accent">photography</span> in
-                        our&nbsp;school
+                    <h1 class="hero-title">Discover the magic&nbsp;of <span class="text-accent">photography</span> in&nbsp;our
+                        school
                     </h1>
                     <p class="hero-desc">Our photography school offers an unforgettable journey, where you can learn the
                         basics of composition, master technical skills, translate your unique ideas.</p>
@@ -94,8 +99,10 @@
                         </a>
                     </div>
                 </div>
-                <img class="h</div>ero-photographer" src="public/images/hero_section/hero_photographer.avif"
-                     alt="photographer">
+                <div class="hero-image-wrapper">
+                    <img class="hero-photographer" src="public/images/hero_section/hero_photographer.avif"
+                         alt="photographer">
+                </div>
             </div>
         </div>
     </section>
