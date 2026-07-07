@@ -9,14 +9,10 @@
 }
 
 .footer-content {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 50px;
     justify-content: space-between;
-
     margin-bottom: 50px;
 }
 
@@ -101,12 +97,3 @@
     font-size: 14px;
     line-height: 1.285;
 }
-
-
-
-
-
-
-
-
-

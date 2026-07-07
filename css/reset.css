@@ -44,3 +44,14 @@ img {
     max-width: 100%;
     /*height: auto;*/
 }
+
+input, textarea {
+    font-family: inherit;
+    border: none;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea {
+    field-sizing: content;
+}

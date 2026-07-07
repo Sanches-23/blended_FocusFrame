@@ -46,7 +46,6 @@
                 </ul>
             </nav>
         </div>
-
         <button class="header-btn" type="button">Sign up</button>
     </div>
 </header>
@@ -233,15 +232,38 @@
     </section>
     <!--Sign Up-->
     <section id="contacts" class="contacts">
-        <div class="container">
-
-            <h2>Sign <span class="text-accent">Up</span></h2>
-            <p>Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
-                shortly.</p>
-            <p>By clicking on “Send” button, you agree to our Privacy Policy, and allow Promodo to use this information
-                for
-                marketing purposes.</p>
-            <img src="./public/images/#" alt="cameras">
+        <div class="container contacts-container">
+            <div class="contacts-form">
+                <h2 class="contacts-title">Sign <span class="text-accent">Up</span></h2>
+                <p class="contacts-desc">Please use the form below to contact us. Enter your name, email, and message
+                    and we'll get back to you shortly.</p>
+                <div class="contacts-form-fields">
+                    <label class="sr-only" for="user-name">Name</label>
+                    <input class="contacts-form-input" type="text" name="username" id="user-name"
+                           placeholder="Enter your name" required>
+                </div>
+                <div class="contacts-form-fields">
+                    <label class="sr-only" for="user-email">Email</label>
+                    <input class="contacts-form-input" type="email" name="user_email" id="user-email"
+                           placeholder="Enter your email" required>
+                </div>
+                <div class="contacts-form-fields">
+                    <label class="sr-only" for="user-message">Message</label>
+                    <textarea class="contacts-form-message" name="user_message" id="user-message" placeholder="Message"
+                              required></textarea>
+                </div>
+                <button class="contacts-form-btn" type="submit">Send</button>
+                <p class="contacts-policy">By clicking on “Send” button, you agree to our Privacy Policy, and allow
+                    Promodo to use this information for marketing purposes.</p>
+            </div>
+            <div class="contacts-image-wrapper">
+                <div class="contacts-image-lens">
+                    <img src="./public/images/contacts_section/lens.png" alt="lens" width="203" height="201">
+                </div>
+                <div class="contacts-image-camera">
+                    <img src="./public/images/contacts_section/camera.png" alt="cameras" width="240" height="296">
+                </div>
+            </div>
         </div>
     </section>
     <!--Reviews-->
@@ -315,34 +337,34 @@
                 </address>
             </div>
             <div class="footer-links">
-            <ul class="footer-socials">
-                <li>
-                    <a href="#">Instagram</a>
-                </li>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Youtube</a>
-                </li>
-            </ul>
-            <ul class="footer-nav">
-                <li>
-                    <a href="#about_us">About us</a>
-                </li>
-                <li>
-                    <a href="#our_courses">Our courses</a>
-                </li>
-                <li>
-                    <a href="#our_mentors">Our mentors</a>
-                </li>
-                <li>
-                    <a href="#reviews">Reviews</a>
-                </li>
-                <li>
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul>
+                <ul class="footer-socials">
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#about_us">About us</a>
+                    </li>
+                    <li>
+                        <a href="#our_courses">Our courses</a>
+                    </li>
+                    <li>
+                        <a href="#our_mentors">Our mentors</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-form">
                 <input class="footer-form-input" type="email" name="" id="" placeholder="Enter your email">
