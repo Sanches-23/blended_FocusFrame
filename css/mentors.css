@@ -1,3 +1,36 @@
 .mentors {
     padding: 75px 0;
 }
+
+.mentors-title {
+    margin-bottom: 50px;
+}
+
+.mentors-list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.mentors-item {
+
+}
+
+.mentors-item-img{
+    margin-bottom: 16px;
+}
+
+.mentors-item-title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.14;
+}
+
+.mentors-item-desc {
+    font-size: 14px;
+    line-height: 1.285;
+    color: rgba(255, 255, 255, 0.5);
+}
