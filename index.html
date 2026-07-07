@@ -61,13 +61,12 @@
                     </h1>
                     <p class="hero-desc">Our photography school offers an unforgettable journey, where you can learn the
                         basics of composition, master technical skills, translate your unique ideas.</p>
-                    <div class="hero-reviews">
-                        <div class="hero-reviews-students">
+                    <div class="hero-responds">
+                        <div class="hero-responds-students">
                             <ul class="students-list">
                                 <li class="students-item">
                                     <img src="public/images/hero_section/hero_student_girl1.png" alt="hero_girl1"
-                                         width="54"
-                                         height="54">
+                                         width="54" height="54">
                                 </li>
                                 <li class="students-item">
                                     <img src="public/images/hero_section/hero_student_boy.png" alt="hero_boy" width="54"
@@ -75,8 +74,7 @@
                                 </li>
                                 <li class="students-item">
                                     <img src="public/images/hero_section/hero_student_girl2.png" alt="hero_girl2"
-                                         width="54"
-                                         height="54">
+                                         width="54" height="54">
                                 </li>
                             </ul>
                             <a class="students-link" href="#students">
@@ -86,15 +84,15 @@
                                 </svg>
                             </a>
                         </div>
-                        <a class="reviews-box" href="#reviews">
-                            <div class="reviews-icon">
+                        <a class="responds-box" href="#reviews">
+                            <div class="responds-icon">
                                 <svg class="" width="20" height="20">
                                     <use href="./public/svg/small_icons.svg#star_outline"></use>
                                 </svg>
                             </div>
-                            <div class="reviews-stats">
-                                <span class="reviews-title">Reviews</span>
-                                <span class="reviews-count">+1500</span>
+                            <div class="responds-stats">
+                                <span class="responds-title">Reviews</span>
+                                <span class="responds-count">+1500</span>
                             </div>
                         </a>
                     </div>
@@ -207,22 +205,26 @@
             <h2 class="mentors-title">Our <span class="text-accent">Mentors</span></h2>
             <ul class="mentors-list">
                 <li class="mentors-item">
-                    <img class="mentors-item-img" src="./public/images/mentors_section/girl1.png" alt="Emilia Smith" width="180" height="180">
+                    <img class="mentors-item-img" src="./public/images/mentors_section/girl1.png" alt="Emilia Smith"
+                         width="180" height="180">
                     <h3 class="mentors-item-title">Emilia Smith</h3>
                     <p class="mentors-item-desc"> 1.5 years of experience</p>
                 </li>
                 <li class="mentors-item">
-                    <img class="mentors-item-img" src="./public/images/mentors_section/boy1.png" alt="Alex Lebedev" width="180" height="180">
+                    <img class="mentors-item-img" src="./public/images/mentors_section/boy1.png" alt="Alex Lebedev"
+                         width="180" height="180">
                     <h3 class="mentors-item-title">Alex Lebedev</h3>
                     <p class="mentors-item-desc"> 3.5 years of experience</p>
                 </li>
                 <li class="mentors-item">
-                    <img class="mentors-item-img" src="./public/images/mentors_section/girl2.png" alt="Mia Dubrovska" width="180" height="180">
+                    <img class="mentors-item-img" src="./public/images/mentors_section/girl2.png" alt="Mia Dubrovska"
+                         width="180" height="180">
                     <h3 class="mentors-item-title">Mia Dubrovska</h3>
                     <p class="mentors-item-desc"> 2.0 years of experience</p>
                 </li>
                 <li class="mentors-item">
-                    <img class="mentors-item-img" src="./public/images/mentors_section/boy2.png" alt="Eliot Kovalev" width="180" height="180">
+                    <img class="mentors-item-img" src="./public/images/mentors_section/boy2.png" alt="Eliot Kovalev"
+                         width="180" height="180">
                     <h3 class="mentors-item-title">Eliot Kovalev</h3>
                     <p class="mentors-item-desc"> 4.0 years of experience</p>
                 </li>
@@ -245,31 +247,52 @@
     <!--Reviews-->
     <section id="reviews" class="reviews">
         <div class="container">
-            <h2>Reviews</h2>
-            <ul>
-                <li>
-                    <img src="./public/images/reviews_section/user1.png" alt="Abraham Baker" width="56" height="56">
-                    <h3>Abraham Baker</h3>
-                    <p>Student</p>
-                    <svg class="-icon" width="20" height="20">
-                        <use href="./public/svg/small_icons.svg#star_colored"></use>
-                    </svg>
-                    <p>I am very pleased that I decided to enroll in photography school. The teachers turned out to be
-                        very
-                        talented and experienced professionals who share their knowledge and are dedicated to their
-                        work. I
-                        was able to expand my skills and discover my own style.</p>
+            <h2 class="reviews-title">Reviews</h2>
+            <ul class="reviews-list">
+                <li class="reviews-item">
+                    <div class="reviews-item-header">
+                        <div class="reviews-item-reviewer">
+                            <img class="reviews-item-avatar" src="./public/images/reviews_section/user1.png"
+                                 alt="Abraham Baker" width="56" height="56">
+                            <div class="reviews-item-info">
+                                <h3 class="reviews-item-title">Abraham Baker</h3>
+                                <p class="reviews-item-desc">Student</p>
+                            </div>
+                        </div>
+                        <svg class="reviews-rating-icon" width="116" height="20">
+                            <use href="./public/svg/small_icons.svg#star_colored" x="-48"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="-24"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="0"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="24"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="48"></use>
+                        </svg>
+                    </div>
+                    <p class="reviews-item-review">I am very pleased that I decided to enroll in photography school. The
+                        teachers turned out to be very talented and experienced professionals who share their knowledge
+                        and are dedicated to their work. I was able to expand my skills and discover my own style.</p>
                 </li>
-                <li>
-                    <img src="./public/images/reviews_section/user2.png" alt="Amanda Lowery" width="56" height="56">
-                    <h3>Amanda Lowery</h3>
-                    <p>Student</p>
-                    <svg class="-icon" width="20" height="20">
-                        <use href="./public/svg/small_icons.svg#star_colored"></use>
-                    </svg>
-                    <p>The courses at the photography school exceeded all my expectations. I gained not only technical
-                        knowledge, but also inspiration and motivation to reach new heights in my creativity. Hands-on
-                        classes and workshops helped me understand different styles of photography.</p>
+                <li class="reviews-item">
+                    <div class="reviews-item-header">
+                        <div class="reviews-item-reviewer">
+                            <img class="reviews-item-avatar" src="./public/images/reviews_section/user2.png"
+                                 alt="Amanda Lowery" width="56" height="56">
+                            <div class="reviews-item-info">
+                                <h3 class="reviews-item-title">Amanda Lowery</h3>
+                                <p class="reviews-item-desc">Student</p>
+                            </div>
+                        </div>
+                        <svg class="reviews-rating-icon" width="116" height="20">
+                            <use href="./public/svg/small_icons.svg#star_colored" x="-48"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="-24"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="0"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="24"></use>
+                            <use href="./public/svg/small_icons.svg#star_colored" x="48"></use>
+                        </svg>
+                    </div>
+                    <p class="reviews-item-review">The courses at the photography school exceeded all my expectations. I
+                        gained not only technical knowledge, but also inspiration and motivation to reach new heights in
+                        my creativity. Hands-on classes and workshops helped me understand different styles of
+                        photography.</p>
                 </li>
             </ul>
         </div>

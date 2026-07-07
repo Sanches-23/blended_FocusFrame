@@ -37,12 +37,12 @@
     margin-bottom: 136px;
 }
 
-.hero-reviews {
+.hero-responds {
     display: flex;
     gap: 40px;
 }
 
-.hero-reviews-students {
+.hero-responds-students {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -82,12 +82,12 @@
 .students-icon {
 }
 
-.reviews-box {
+.responds-box {
     display: flex;
     gap: 12px;
 }
 
-.reviews-icon {
+.responds-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,19 +98,19 @@
     height: 50px;
 }
 
-.reviews-stats {
+.responds-stats {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.reviews-title {
+.responds-title {
     line-height: 1.25;
     letter-spacing: -0.04em;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.reviews-count {
+.responds-count {
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -0.04em;
