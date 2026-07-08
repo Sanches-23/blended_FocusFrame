@@ -15,7 +15,10 @@
 
 .contacts-image-wrapper {
     display: flex;
+    align-items: flex-end;
     gap: 20px;
+    width: 540px;
+    height: 540px;
 }
 
 .contacts-title {
@@ -33,7 +36,7 @@
 
 .contacts-form-input, .contacts-form-message {
     border-radius: 12px;
-    padding: 20px 18px;
+    /*padding: 20px 18px;*/
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: transparent;
@@ -41,10 +44,12 @@
 }
 
 .contacts-form-input {
-
+    padding: 0 18px;
+    height: 60px;
 }
 
 .contacts-form-message {
+    padding: 20px 18px;
     min-height: 120px;
     margin-bottom: 20px;
 }
@@ -86,15 +91,16 @@
     width: 180px;
     height: 288px;
     overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .contacts-image-lens img {
     height: auto;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    max-width: none;
 }
 
 .contacts-image-camera {
@@ -103,13 +109,14 @@
     width: 340px;
     height: 540px;
     overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .contacts-image-camera img {
     height: auto;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    max-width: none;
 }
