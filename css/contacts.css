@@ -31,7 +31,6 @@
 
 .contacts-form-fields {
     width: 480px;
-    margin-bottom: 20px;
 }
 
 .contacts-form-input, .contacts-form-message {
@@ -45,13 +44,14 @@
 
 .contacts-form-input {
     padding: 0 18px;
+    margin-bottom: 20px;
     height: 60px;
 }
 
 .contacts-form-message {
     padding: 20px 18px;
     min-height: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .contacts-form-input::placeholder,
