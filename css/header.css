@@ -1,5 +1,8 @@
 .header {
-    margin: 20px 0;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .header-container {
@@ -17,11 +20,20 @@
     border-radius: 12px;
     padding: 0 50px;
     gap: 28px;
+    background-color: rgba(18, 18, 18, 0.8);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
 }
 
 .header-logo {
     padding: 21px 0;
-    flex-shrink: 0
+    flex-shrink: 0;
+    color: #ffffff;
+    transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.header-logo:focus, .header-logo:hover {
+    color: #bea69e;
 }
 
 .header-nav {
@@ -42,6 +54,11 @@
     font-size: 14px;
     text-transform: uppercase;
     padding: 21px 0;
+    transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: #bea69e;
 }
 
 .header-btn {
@@ -60,4 +77,9 @@
     max-width: 240px;
     min-width: 105px;
     padding: 16px;
+    transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.header-btn:hover, .header-btn:focus {
+    background-color: #bea69e;
 }

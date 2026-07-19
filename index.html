@@ -24,7 +24,9 @@
     <div class="container header-container">
         <div class="header-content">
             <a class="header-logo" href="./index.html">
-                <img class="logo" src="./public/svg/logo.svg" alt="FocusFrame" width="123" height="16">
+                <svg class="logo" width="123" height="16">
+                    <use href="./public/svg/small_icons.svg#focus_frame"></use>
+                </svg>
             </a>
             <nav class="header-nav">
                 <ul class="header-menu">
@@ -153,11 +155,11 @@
                 <li class="courses-item">
                     <div class="courses-item-header">
                         <p class="courses-item-number">01</p>
-                        <div class="courses-icon-box">
+                        <a class="courses-icon-box" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="courses-item-icon" width="20" height="20">
                                 <use href="./public/svg/small_icons.svg#arrow_narrow_up_right"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                     <h3 class="courses-item-title">Basics of photography</h3>
                     <p class="courses-item-desc">During this course, you will be able to familiarize yourself with
@@ -168,11 +170,11 @@
                 <li class="courses-item">
                     <div class="courses-item-header">
                         <p class="courses-item-number">02</p>
-                        <div class="courses-icon-box">
+                        <a class="courses-icon-box" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="courses-item-icon" width="20" height="20">
                                 <use href="./public/svg/small_icons.svg#arrow_narrow_up_right"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                     <h3 class="courses-item-title">Landscape photography</h3>
                     <p class="courses-item-desc">In this course, you'll learn how to choose the right angles, frame
@@ -183,11 +185,11 @@
                 <li class="courses-item">
                     <div class="courses-item-header">
                         <p class="courses-item-number">03</p>
-                        <div class="courses-icon-box">
+                        <a class="courses-icon-box" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="courses-item-icon" width="20" height="20">
                                 <use href="./public/svg/small_icons.svg#arrow_narrow_up_right"></use>
                             </svg>
-                        </div>
+                        </a>
                     </div>
                     <h3 class="courses-item-title">Portrait photography</h3>
                     <p class="courses-item-desc">During this course, you will learn to choose the right lighting,
@@ -324,41 +326,45 @@
     <div class="container footer-container">
         <div class="footer-content">
             <div class="footer-logo-wrapper">
-                <a class="footer-logo" href="./index.html"><img src="./public/svg/logo.svg" alt="FocusFrame"></a>
+                <a class="footer-logo" href="./index.html">
+                    <svg class="logo" width="123" height="16">
+                        <use href="./public/svg/small_icons.svg#focus_frame"></use>
+                    </svg>
+                </a>
                 <address>
                     <ul class="footer-address">
-                        <li>
+                        <li class="footer-address-item">
                             <a href="tel:+380665438912">+38 066 543 8912</a>
                         </li>
-                        <li>
-                            <a href="#">1678 S. Pioneer Road Salt Lake City UT 84104</a>
+                        <li class="footer-address-item">
+                            <a href="#" target="_blank" rel="noopener noreferrer">1678 S. Pioneer Road Salt Lake City UT 84104</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div class="footer-links">
                 <ul class="footer-socials">
-                    <li>
+                    <li class="footer-socials-item">
                         <a href="#">Instagram</a>
                     </li>
-                    <li>
+                    <li class="footer-socials-item">
                         <a href="#">Facebook</a>
                     </li>
-                    <li>
+                    <li class="footer-socials-item">
                         <a href="#">Youtube</a>
                     </li>
                 </ul>
                 <ul class="footer-nav">
-                    <li>
+                    <li class="footer-nav-item">
                         <a href="#about_us">About us</a>
                     </li>
-                    <li>
+                    <li class="footer-nav-item">
                         <a href="#our_courses">Our courses</a>
                     </li>
                     <li>
                         <a href="#our_mentors">Our mentors</a>
                     </li>
-                    <li>
+                    <li class="footer-nav-item">
                         <a href="#reviews">Reviews</a>
                     </li>
                     <li>
@@ -366,13 +372,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
-                <input class="footer-form-input" type="email" name="" id="" placeholder="Enter your email">
+            <form class="footer-form">
+                <label class="sr" for="for-sub"></label>
+                <input class="footer-form-input" type="email" name="email" id="for-sub" placeholder="Enter your email">
                 <button class="footer-form-btn" type="submit">Go</button>
-            </div>
+            </form>
         </div>
         <div class="footer-bottom">
-            <a class="footer-legals" href="#">Privacy Policy Public&nbsp;Offering&nbsp;Agreement</a>
+            <a class="footer-legals" href="#" target="_blank" rel="noopener noreferrer">Privacy Policy Public&nbsp;Offering&nbsp;Agreement</a>
             <p class="footer-copy">2024 Focus Frame &copy;&nbsp;All rights reserved</p>
         </div>
     </div>

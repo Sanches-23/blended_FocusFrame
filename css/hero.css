@@ -54,6 +54,7 @@
 
 .students-item {
     position: relative;
+    transition: transform 200ms cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .students-item:not(:last-child) {
@@ -77,6 +78,16 @@
     flex-direction: column;
     gap: 8px;
     max-width: 82px;
+    transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.students-link:hover, .students-link:focus {
+    color: #bea69e;
+}
+
+.hero-responds-students:has(.students-link:hover) .students-item,
+.hero-responds-students:has(.students-link:focus) .students-item {
+    transform: scale(1.1);
 }
 
 .students-icon {
@@ -96,6 +107,13 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1),
+    transform 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.responds-box:hover .responds-icon, .responds-box:focus .responds-icon {
+    background-color: #ffffff;
+    transform: scale(1.1);
 }
 
 .responds-stats {
