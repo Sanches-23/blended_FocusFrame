@@ -26,5 +26,9 @@
         <symbol id="star_colored" viewBox="0 0 20 20" fill="none">
             <path stroke-width="1.5" stroke="currentColor" stroke-linejoin="round" fill="currentColor" d="M10 2l2.472 4.9369L18 7.7334l-4 3.8407L14.944 17 10 14.4369 5.056 17 6 11.5741 2 7.7334 7.528 6.9369z" />
         </symbol>
+        <symbol id="close_btn" viewBox="0 0 32 32" stroke-width="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M24 8 8 24" />
+            <path d="M8 8 24 24" />
+        </symbol>
     </defs>
 </svg>
