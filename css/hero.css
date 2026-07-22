@@ -1,7 +1,11 @@
 .hero {
-    margin: 50px 0 150px;
+    margin-top: -100px;
+    padding: 160px 0 150px;
+    background-image: url('../public/svg/line_y.svg'), url('../public/svg/line_x.svg');
+    background-repeat: repeat-y, repeat-x;
+    background-size: 1500px 185px,  255px 1000px;
+    background-position: center 15px, 0 top;
 }
-
 .hero-card {
     display: flex;
     justify-content: space-between;
@@ -143,4 +147,16 @@
 
 .hero-img {
     object-fit: cover;
+}
+
+@media (min-width: 767px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 1440px) {
+
 }
