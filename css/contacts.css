@@ -1,5 +1,5 @@
 .contacts {
-    padding: 75px 0;
+    padding: 40px 0;
 }
 
 .contacts-container {
@@ -10,11 +10,12 @@
 .contacts-form {
     display: flex;
     flex-direction: column;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
 }
 
 .contacts-image-wrapper {
-    display: flex;
+    display: none;
     align-items: flex-end;
     gap: 20px;
     width: 540px;
@@ -23,17 +24,22 @@
 
 .contacts-title {
     margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.14;
 }
 
 .contacts-desc {
     margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.29;
 }
 
 .contacts-form-fields {
-    width: 480px;
+    width: 100%;
 }
 
 .contacts-form-input, .contacts-form-message {
+    font-size: 14px;
     border-radius: 12px;
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -43,14 +49,14 @@
 
 .contacts-form-input {
     padding: 0 18px;
-    margin-bottom: 20px;
-    height: 60px;
+    margin-bottom: 8px;
+    height: 46px;
     transition: border-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .contacts-form-message {
-    padding: 20px 18px;
-    min-height: 120px;
+    padding: 14px 18px;
+    min-height: 114px;
     margin-bottom: 40px;
     transition: border-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
 }
@@ -58,6 +64,8 @@
 .contacts-form-input::placeholder,
 .contacts-form-message::placeholder {
     color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.29;
 }
 
 .contacts-form-input:focus,
@@ -67,14 +75,15 @@
 }
 
 .contacts-form-btn {
+    width: 100%;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: 16px;
+    line-height: 1.25;
     text-transform: uppercase;
     color: #121212;
     background-color: #fff;
     border-radius: 12px;
-    padding: 16px 216px;
+    padding: 14px 14px;
     margin-bottom: 20px;
     transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
 }
@@ -84,11 +93,15 @@
 }
 
 .contacts-policy {
-    font-size: 14px;
-    line-height: 1.285;
+    font-size: 12px;
+    line-height: 1.33;
     color: rgba(255, 255, 255, 0.5);
 }
 
+.contacts-policy .underline{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
 
 .contacts-image-lens {
     background-color: #bea69e;
@@ -127,13 +140,77 @@
 }
 
 @media (min-width: 767px) {
+    .contacts {
+        padding: 50px 0;
+    }
 
+    .contacts-title {
+        font-size: 48px;
+        line-height: 1.125;
+    }
+
+    .contacts-desc {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .contacts-form-input, .contacts-form-message {
+        font-size: 16px;
+    }
+
+    .contacts-form-input {
+        margin-bottom: 14px;
+        height: 60px;
+    }
+
+    .contacts-form-message {
+        padding: 20px 18px;
+        min-height: 120px;
+    }
+
+    .contacts-form-input::placeholder,
+    .contacts-form-message::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .contacts-form-btn {
+        font-size: 18px;
+        line-height: 1.55;
+        padding: 16px 16px;
+    }
+
+    .contacts-policy {
+        font-size: 14px;
+        line-height: 1.285;
+    }
 }
 
 @media (min-width: 1280px) {
+    .contacts {
+        padding: 75px 0;
+    }
 
+    .contacts-image-wrapper {
+        display: flex;
+    }
+
+    .contacts-form-input {
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 1440px) {
 
+    .contacts-image-wrapper {
+        width: 560px;
+    }
+
+    .contacts-image-lens {
+        width: 190px;
+    }
+
+    .contacts-image-camera {
+        width: 350px;
+    }
 }

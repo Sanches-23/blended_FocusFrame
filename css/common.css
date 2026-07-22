@@ -27,12 +27,12 @@ p {
 }
 
 .container {
-    /*width: 100%;*/
-    /*max-width: 335px;*/
-    /*padding: 0 20px;*/
+    width: 100%;
+    max-width: 335px;
+    padding: 0 20px;
     margin: 0 auto;
-    max-width: 1110px;
-    padding: 0 15px;
+    /*max-width: 1110px;*/
+    /*padding: 0 15px;*/
 }
 
 .text-accent {
@@ -74,23 +74,23 @@ p {
     overflow: hidden;
 }
 
-/*@media (min-width: 768px) {*/
-/*    .container {*/
-/*        max-width: 768;*/
-/*        padding: 0 32px;*/
-/*    }*/
-/*}*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
 
-/*@media (min-width: 1280px) {*/
-/*    .container {*/
-/*        max-width: 1110px;*/
-/*        padding: 0 15px;*/
-/*    }*/
-/*}*/
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1110px;
+        padding: 0 15px;
+    }
+}
 
-/*@media (min-width: 1440px) {*/
-/*    .container {*/
-/*        max-width: 1280px;*/
-/*        padding: 0 20px;*/
-/*    }*/
-/*}*/
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 20px;
+    }
+}

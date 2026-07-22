@@ -1,8 +1,6 @@
 .footer {
-    /*padding: 50px 25px;*/
     padding: 50px 0;
     border-top: #414141 solid 1px;
-
     background-image: url('../public/svg/line_y.svg'), url('../public/svg/line_x.svg');
     background-repeat: repeat-y, repeat-x;
     background-size: 1500px 160px,  255px 1000px;
