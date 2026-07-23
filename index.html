@@ -123,9 +123,13 @@
             <h2 class="about-title">About <span class="text-accent">Us</span></h2>
             <div class="about-content">
                 <div class="about-image-wrapper">
-                    <img class="about-img" src="./public/images/about_section/camera_about.jpg"
-                         srcset="./public/images/about_section/camera_about.jpg 1x, ./public/images/about_section/camera_about@2x.jpg 2x"
-                         alt="camera" width="488" height="636">
+                    <picture>
+                        <source media="(min-width: 1440px)"
+                                srcset="./public/images/about_section/camera_about-1440.jpg 1x, ./public/images/about_section/camera_about-1440@2x.jpg 2x">
+                        <img class="about-img" src="./public/images/about_section/camera_about.jpg"
+                             srcset="./public/images/about_section/camera_about.jpg 1x, ./public/images/about_section/camera_about@2x.jpg 2x"
+                             alt="camera" width="488" height="636">
+                    </picture>
                 </div>
                 <div class="about-info">
                     <p class="about-desc">Our photography school is designed to teach you everything you need to know
@@ -319,7 +323,7 @@
                                 <p class="reviews-item-desc">Student</p>
                             </div>
                         </div>
-                        <svg class="reviews-rating-icon" viewBox="0 0 116 20">
+                        <svg class="reviews-rating-icon" width="116" height="20">
                             <use href="./public/svg/small_icons.svg#star_colored" x="-48"></use>
                             <use href="./public/svg/small_icons.svg#star_colored" x="-24"></use>
                             <use href="./public/svg/small_icons.svg#star_colored" x="0"></use>

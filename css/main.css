@@ -3,8 +3,8 @@
 /*@import "./header.css";*/
 
 /*@import "./hero.css";*/
-/*@import "./tagline.css";*/
-/*@import "./about.css";*/
+@import "./tagline.css";
+@import "./about.css";
 /*@import "./courses.css";*/
 @import "./mentors.css";
 @import "./contacts.css";
