@@ -1,14 +1,16 @@
 .reviews {
-    padding: 75px 0 150px;
+    padding: 40px 0 80px;
 }
 
 .reviews-title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 1.14;
 }
 
 .reviews-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -18,8 +20,13 @@
     border-radius: 12px;
 }
 
+.reviews-item:last-child {
+    display: none;
+}
+
 .reviews-item-header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -37,22 +44,30 @@
 }
 
 .reviews-item-avatar {
-
+    border-radius: 50%;
 }
 
 .reviews-item-title {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 .reviews-item-desc {
-    font-size: 14px;
-    line-height: 1.285;
+    font-size: 12px;
+    line-height: 1.33;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.reviews-rating-icon use{
+.reviews-rating-icon {
+    margin-top: 4px;
+    margin-left: 66px;
+    width: 96px;
+    height: auto;
+    align-self: flex-start;
+}
+
+.reviews-rating-icon use {
     color: #bea69e;
 }
 
@@ -61,15 +76,57 @@
 }
 
 .reviews-item-review {
-    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.285;
 }
 
 @media (min-width: 767px) {
+    .reviews {
+        padding: 50px 0 100px;
+    }
+    .reviews-title {
+        margin-bottom: 50px;
+        font-size: 48px;
+        line-height: 1.125;
+    }
 
+    .reviews-item-header {
+        flex-direction: row;
+    }
+
+    .reviews-item-title {
+        line-height: 1.4;
+    }
+
+    .reviews-item-desc {
+        font-size: 14px;
+        line-height: 1.285;
+    }
+
+    .reviews-rating-icon {
+        margin-top: 0;
+        margin-left: 0;
+        width: 116px;
+    }
+
+    .reviews-item-review {
+        font-size: 16px;
+        line-height: 1.25;
+    }
 }
 
 @media (min-width: 1280px) {
+    .reviews {
+        padding: 75px 0 150px;
+    }
 
+    .reviews-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-item:last-child {
+        display: block;
+    }
 }
 
 @media (min-width: 1440px) {
