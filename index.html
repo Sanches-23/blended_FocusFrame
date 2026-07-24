@@ -47,6 +47,18 @@
                     </li>
                 </ul>
             </nav>
+        <div class="header-mob-buttons">
+            <button class="header-camera-btn" type="button" aria-label="camera button">
+                <svg class="header-camera-icon" width="16" height="16">
+                    <use href="./public/svg/small_icons.svg#nav_camera"></use>
+                </svg>
+            </button>
+            <button class="header-burger-btn" type="button" aria-label="burger button">
+                <svg class="header-burger-icon" width="32" height="22">
+                    <use href="./public/svg/small_icons.svg#burger_menu"></use>
+                </svg>
+            </button>
+        </div>
         </div>
         <button class="header-btn" type="button">Sign up</button>
     </div>
@@ -66,19 +78,34 @@
                         <div class="hero-responds-students">
                             <ul class="students-list">
                                 <li class="students-item">
-                                    <img src="./public/images/hero_section/student_girl1.png"
-                                         srcset="./public/images/hero_section/student_girl1.png 1x, ./public/images/hero_section/student_girl1@2x.png 2x"
-                                         alt="hero_girl1" width="54" height="54">
+                                    <picture>
+                                        <source media="(min-width: 768px)"
+                                                srcset="./public/images/hero_section/student_girl1.png 1x, ./public/images/hero_section/student_girl1@2x.png 2x"
+                                                width="54" height="54">
+                                        <img src="./public/images/hero_section/student_girl1-m.png"
+                                             srcset="./public/images/hero_section/student_girl1-m.png 1x, ./public/images/hero_section/student_girl1-m@2x.png 2x"
+                                             alt="girl student" width="44" height="44">
+                                    </picture>
                                 </li>
                                 <li class="students-item">
-                                    <img src="./public/images/hero_section/student_boy.png"
-                                         srcset="./public/images/hero_section/student_boy.png 1x, ./public/images/hero_section/student_boy@2x.png 2x"
-                                         alt="hero_boy" width="54" height="54">
+                                    <picture>
+                                        <source media="(min-width: 768px)"
+                                                srcset="./public/images/hero_section/student_boy.png 1x, ./public/images/hero_section/student_boy@2x.png 2x"
+                                                width="54" height="54">
+                                        <img src="./public/images/hero_section/student_boy-m.png"
+                                             srcset="./public/images/hero_section/student_boy-m.png 1x, ./public/images/hero_section/student_boy-m@2x.png 2x"
+                                             alt="boy student" width="44" height="44">
+                                    </picture>
                                 </li>
                                 <li class="students-item">
-                                    <img src="./public/images/hero_section/student_girl2.png"
-                                         srcset="./public/images/hero_section/student_girl2.png 1x, ./public/images/hero_section/student_girl2@2x.png 2x"
-                                         alt="hero_girl2" width="54" height="54">
+                                    <picture>
+                                        <source media="(min-width: 768px)"
+                                                srcset="./public/images/hero_section/student_girl2.png 1x, ./public/images/hero_section/student_girl2@2x.png 2x"
+                                                width="54" height="54">
+                                        <img src="./public/images/hero_section/student_girl2-m.png"
+                                             srcset="./public/images/hero_section/student_girl2-m.png 1x, ./public/images/hero_section/student_girl2-m@2x.png 2x"
+                                             alt="girl student" width="44" height="44">
+                                    </picture>
                                 </li>
                             </ul>
                             <a class="students-link" href="#students">
@@ -102,9 +129,14 @@
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <img class="hero-img" src="./public/images/hero_section/photographer.png"
-                         srcset="./public/images/hero_section/photographer.png 1x, ./public/images/hero_section/photographer@2x.png 2x"
-                         alt="photographer">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="./public/images/hero_section/photographer.png 1x, ./public/images/hero_section/photographer@2x.png 2x"
+                                width="393" height="434">
+                        <img class="hero-img" src="./public/images/hero_section/photographer-m.png"
+                             srcset="./public/images/hero_section/photographer-m.png 1x, ./public/images/hero_section/photographer-m@2x.png 2x"
+                             alt="photographer" width="259" height="314">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -122,9 +154,13 @@
             <h2 class="about-title">About <span class="text-accent">Us</span></h2>
             <div class="about-content">
                 <div class="about-image-wrapper">
-                    <img class="about-img" src="./public/images/about_section/camera_about.jpg"
-                         srcset="./public/images/about_section/camera_about.jpg 1x, ./public/images/about_section/camera_about@2x.jpg 2x"
-                         alt="camera" width="488" height="636">
+                    <picture>
+                        <source media="(min-width: 1440px)"
+                                srcset="./public/images/about_section/camera_about-1440.jpg 1x, ./public/images/about_section/camera_about-1440@2x.jpg 2x">
+                        <img class="about-img" src="./public/images/about_section/camera_about.jpg"
+                             srcset="./public/images/about_section/camera_about.jpg 1x, ./public/images/about_section/camera_about@2x.jpg 2x"
+                             alt="camera" width="488" height="636">
+                    </picture>
                 </div>
                 <div class="about-info">
                     <p class="about-desc">Our photography school is designed to teach you everything you need to know
@@ -262,8 +298,8 @@
                               required></textarea>
                 </div>
                 <button class="contacts-form-btn" type="submit">Send</button>
-                <p class="contacts-policy">By clicking on “Send” button, you agree to our Privacy Policy, and allow
-                    Promodo to use this information for marketing purposes.</p>
+                <p class="contacts-policy">By clicking on “Send” button, you agree to our <span class="underline">Privacy Policy</span>,
+                    and&nbsp;allowPromodo to use this information for marketing purposes.</p>
             </form>
             <div class="contacts-image-wrapper">
                 <div class="contacts-image-lens">
@@ -274,7 +310,7 @@
                 <div class="contacts-image-camera">
                     <img src="./public/images/contacts_section/camera.png"
                          srcset="./public/images/contacts_section/camera.png 1x, ./public/images/contacts_section/camera@2x.png 2x"
-                         alt="cameras" width="240" height="296">
+                         alt="camera" width="240" height="296">
                 </div>
             </div>
         </div>
@@ -295,7 +331,7 @@
                                 <p class="reviews-item-desc">Student</p>
                             </div>
                         </div>
-                        <svg class="reviews-rating-icon" width="116" height="20">
+                        <svg class="reviews-rating-icon" viewBox="0 0 116 20">
                             <use href="./public/svg/small_icons.svg#star_colored" x="-48"></use>
                             <use href="./public/svg/small_icons.svg#star_colored" x="-24"></use>
                             <use href="./public/svg/small_icons.svg#star_colored" x="0"></use>
@@ -387,7 +423,7 @@
                 </ul>
             </div>
             <form class="footer-form">
-                <label class="sr" for="for-sub"></label>
+                <label class="sr-only" for="for-sub"></label>
                 <input class="footer-form-input" type="email" name="email" id="for-sub" placeholder="Enter your email">
                 <button class="footer-form-btn" type="submit">Go</button>
             </form>
@@ -400,7 +436,7 @@
 </footer>
 <div class="mobile-menu-overlay" id="mobile-menu">
     <div class="mobile-menu-container">
-        <button class="btn-close mobile-close" type="button" aria-label="Close modal">
+        <button class="btn-close mobile-close" type="button" aria-label="close modal">
             <svg class="btn-close-icon" width="32" height="32">
                 <use href="./public/svg/small_icons.svg#close_btn"></use>
             </svg>

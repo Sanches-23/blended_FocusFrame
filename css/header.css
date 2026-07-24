@@ -1,8 +1,8 @@
 .header {
-    padding: 20px 0;
     position: sticky;
+    padding: 20px 0;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .header-container {
@@ -18,7 +18,7 @@
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
-    padding: 0 50px;
+    padding: 0 20px;
     gap: 28px;
     background-color: rgba(18, 18, 18, 0.8);
     -webkit-backdrop-filter: blur(12px);
@@ -26,10 +26,17 @@
 }
 
 .header-logo {
-    padding: 21px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
     flex-shrink: 0;
-    color: #ffffff;
     transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.header-logo > .logo {
+    width: 127px;
+    height: 20px;
 }
 
 .header-logo:focus, .header-logo:hover {
@@ -37,7 +44,7 @@
 }
 
 .header-nav {
-
+    display: none;
 }
 
 .header-menu {
@@ -46,7 +53,6 @@
 }
 
 .menu-item {
-
 }
 
 .menu-link {
@@ -61,7 +67,53 @@
     color: #bea69e;
 }
 
+.header-mob-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.header-camera-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    color: rgba(190, 166, 158, 0.4);
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    flex-shrink: 0;
+    transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.header-camera-btn:hover, .header-camera-btn:focus {
+    color: #bea69e;
+}
+
+.header-camera-icon {
+}
+
+.header-burger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1),
+    color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.header-burger-btn:hover, .header-burger-btn:focus {
+    background-color: #1d1d1d;
+    color: #bea69e;
+}
+
+.header-burger-icon {
+}
+
 .header-btn {
+    display: none;
     color: #121212;
     background-color: #FFFFFF;
     font-weight: 700;
@@ -70,7 +122,7 @@
     text-transform: uppercase;
     border-radius: 14px;
     width: 100%;
-    max-width: 240px;
+    max-width: 187px;
     min-width: 105px;
     padding: 16px;
     transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
@@ -78,4 +130,53 @@
 
 .header-btn:hover, .header-btn:focus {
     background-color: #bea69e;
+}
+
+@media (min-width: 767px) {
+    .header-logo {
+        padding: 21px 0;
+    }
+
+    .header-logo > .logo {
+        width: 123px;
+        height: 16px;
+    }
+
+    .header-camera-btn {
+        display: none;
+    }
+
+    .header-burger-btn {
+        height: 32px;
+        width: 40px;
+    }
+
+    .header-btn {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-content {
+        padding: 0 50px;
+    }
+
+    .header-nav {
+        display: block;
+    }
+
+    .header-mob-buttons {
+        display: none;
+    }
+
+    .header-burger-btn {
+        display: none;
+    }
+    .header-btn{
+        max-width: 240px;
+    }
+}
+
+@media (min-width: 1440px) {
+
 }

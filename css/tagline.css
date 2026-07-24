@@ -1,13 +1,37 @@
 .tagline{
-    padding: 24px 0;
+    padding: 20px 0;
     border-block: #414141 solid 1px;
+    overflow: hidden;
+    width: 100%;
 }
 .tagline-title{
     font-weight: 400;
-    font-size: 59px;
-
-    line-height: 1.08;
+    font-size: 28px;
+    line-height: 1.14286;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     text-align: center;
+    white-space: nowrap;
+}
+
+@media (min-width: 767px) {
+
+    .tagline{
+        padding: 24px 0;
+    }
+    .tagline-title {
+        font-size: 40px;
+        line-height: 1.25;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tagline-title {
+        font-size: 59px;
+        line-height: 1.08;
+    }
+}
+
+@media (min-width: 1440px) {
+
 }
