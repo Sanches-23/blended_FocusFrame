@@ -21,7 +21,7 @@
 .about-image-wrapper {
     position: relative;
     width: 100%;
-    min-width: 335px;
+    /*min-width: 335px;*/
     min-height: 209px;
     border-radius: 1000px;
     overflow: hidden;

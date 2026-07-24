@@ -1,8 +1,8 @@
 @import "./reset.css";
 @import "./common.css";
-/*@import "./header.css";*/
+@import "./header.css";
 
-/*@import "./hero.css";*/
+@import "./hero.css";
 @import "./tagline.css";
 @import "./about.css";
 @import "./courses.css";

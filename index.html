@@ -47,6 +47,18 @@
                     </li>
                 </ul>
             </nav>
+        <div class="header-mob-buttons">
+            <button class="header-camera-btn" type="button" aria-label="camera button">
+                <svg class="header-camera-icon" width="16" height="16">
+                    <use href="./public/svg/small_icons.svg#nav_camera"></use>
+                </svg>
+            </button>
+            <button class="header-burger-btn" type="button" aria-label="burger button">
+                <svg class="header-burger-icon" width="32" height="22">
+                    <use href="./public/svg/small_icons.svg#burger_menu"></use>
+                </svg>
+            </button>
+        </div>
         </div>
         <button class="header-btn" type="button">Sign up</button>
     </div>
@@ -66,19 +78,34 @@
                         <div class="hero-responds-students">
                             <ul class="students-list">
                                 <li class="students-item">
-                                    <img src="./public/images/hero_section/student_girl1.png"
-                                         srcset="./public/images/hero_section/student_girl1.png 1x, ./public/images/hero_section/student_girl1@2x.png 2x"
-                                         alt="hero_girl1" width="54" height="54">
+                                    <picture>
+                                        <source media="(min-width: 768px)"
+                                                srcset="./public/images/hero_section/student_girl1.png 1x, ./public/images/hero_section/student_girl1@2x.png 2x"
+                                                width="54" height="54">
+                                        <img src="./public/images/hero_section/student_girl1-m.png"
+                                             srcset="./public/images/hero_section/student_girl1-m.png 1x, ./public/images/hero_section/student_girl1-m@2x.png 2x"
+                                             alt="girl student" width="44" height="44">
+                                    </picture>
                                 </li>
                                 <li class="students-item">
-                                    <img src="./public/images/hero_section/student_boy.png"
-                                         srcset="./public/images/hero_section/student_boy.png 1x, ./public/images/hero_section/student_boy@2x.png 2x"
-                                         alt="hero_boy" width="54" height="54">
+                                    <picture>
+                                        <source media="(min-width: 768px)"
+                                                srcset="./public/images/hero_section/student_boy.png 1x, ./public/images/hero_section/student_boy@2x.png 2x"
+                                                width="54" height="54">
+                                        <img src="./public/images/hero_section/student_boy-m.png"
+                                             srcset="./public/images/hero_section/student_boy-m.png 1x, ./public/images/hero_section/student_boy-m@2x.png 2x"
+                                             alt="boy student" width="44" height="44">
+                                    </picture>
                                 </li>
                                 <li class="students-item">
-                                    <img src="./public/images/hero_section/student_girl2.png"
-                                         srcset="./public/images/hero_section/student_girl2.png 1x, ./public/images/hero_section/student_girl2@2x.png 2x"
-                                         alt="hero_girl2" width="54" height="54">
+                                    <picture>
+                                        <source media="(min-width: 768px)"
+                                                srcset="./public/images/hero_section/student_girl2.png 1x, ./public/images/hero_section/student_girl2@2x.png 2x"
+                                                width="54" height="54">
+                                        <img src="./public/images/hero_section/student_girl2-m.png"
+                                             srcset="./public/images/hero_section/student_girl2-m.png 1x, ./public/images/hero_section/student_girl2-m@2x.png 2x"
+                                             alt="girl student" width="44" height="44">
+                                    </picture>
                                 </li>
                             </ul>
                             <a class="students-link" href="#students">
@@ -102,9 +129,14 @@
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <img class="hero-img" src="./public/images/hero_section/photographer.png"
-                         srcset="./public/images/hero_section/photographer.png 1x, ./public/images/hero_section/photographer@2x.png 2x"
-                         alt="photographer">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="./public/images/hero_section/photographer.png 1x, ./public/images/hero_section/photographer@2x.png 2x"
+                                width="393" height="434">
+                        <img class="hero-img" src="./public/images/hero_section/photographer.png"
+                             srcset="./public/images/hero_section/photographer-m.png 1x, ./public/images/hero_section/photographer-m@2x.png 2x"
+                             alt="photographer" width="259" height="314">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -279,7 +311,7 @@
                 <div class="contacts-image-camera">
                     <img src="./public/images/contacts_section/camera.png"
                          srcset="./public/images/contacts_section/camera.png 1x, ./public/images/contacts_section/camera@2x.png 2x"
-                         alt="cameras" width="240" height="296">
+                         alt="camera" width="240" height="296">
                 </div>
             </div>
         </div>
@@ -405,7 +437,7 @@
 </footer>
 <div class="mobile-menu-overlay" id="mobile-menu">
     <div class="mobile-menu-container">
-        <button class="btn-close mobile-close" type="button" aria-label="Close modal">
+        <button class="btn-close mobile-close" type="button" aria-label="close modal">
             <svg class="btn-close-icon" width="32" height="32">
                 <use href="./public/svg/small_icons.svg#close_btn"></use>
             </svg>
