@@ -1,10 +1,10 @@
 .footer {
-    padding: 50px 0;
+    padding: 40px 0 20px;
     border-top: #414141 solid 1px;
     background-image: url('../public/svg/line_y.svg'), url('../public/svg/line_x.svg');
     background-repeat: repeat-y, repeat-x;
-    background-size: 1500px 160px,  255px 1000px;
-    background-position: center 35px, 0 top;
+    background-size: 1500px 185px, 100px 1000px;
+    background-position: center 15px, center top;
 }
 
 .footer-container {
@@ -14,10 +14,10 @@
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 40px;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .footer-logo-wrapper {
@@ -26,8 +26,15 @@
 }
 
 .footer-logo {
-    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
     transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.footer-logo > .logo {
+    width: 127px;
+    height: 20px;
 }
 
 .footer-logo:hover, .footer-logo:focus {
@@ -36,7 +43,7 @@
 
 .footer-links {
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 .footer-address {
@@ -45,7 +52,6 @@
     gap: 10px;
     font-size: 14px;
     line-height: 1.285;
-    text-transform: uppercase;
 }
 
 .footer-address-item, .footer-socials-item, .footer-nav-item, .footer-legals {
@@ -62,7 +68,7 @@
 .footer-socials {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -70,21 +76,21 @@
 .footer-nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-
 .footer-form {
     display: flex;
-    gap: 16px;
+    gap: 8px;
+    margin-top: 75px;
 }
 
 .footer-form-input {
     border-radius: 12px;
     padding: 20px 18px;
-    width: 216px;
+    width: 100%;
     height: 60px;
     font-size: 16px;
     line-height: 1.25;
@@ -101,6 +107,7 @@
     border-radius: 12px;
     width: 60px;
     height: 60px;
+    flex-shrink: 0;
     align-items: center;
     background-color: #1d1d1d;
     font-size: 20px;
@@ -121,24 +128,109 @@
 
 .footer-legals {
     width: 171px;
-    font-size: 14px;
-    line-height: 1.285;
+    font-size: 12px;
+    line-height: 1.33;
 }
 
 .footer-copy {
-    width: 134px;
-    font-size: 14px;
-    line-height: 1.285;
+    width: 116px;
+    font-size: 12px;
+    line-height: 1.33;
 }
 
 @media (min-width: 767px) {
+    .footer {
+        padding: 50px 0 25px;
+        background-size: 1500px 178px, 150px 1000px;
+    }
 
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        gap: 50px;
+        justify-content: space-between;
+        margin-bottom: 74px;
+    }
+
+    .footer-logo {
+        margin-bottom: 25px;
+    }
+
+    .footer-logo > .logo {
+        width: 123px;
+        height: 16px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 25px;
+    }
+
+    .footer-address {
+        max-width: 152px;
+    }
+
+    .footer-form {
+        margin-top: 0;
+    }
+
+    .footer-form-input {
+        max-width: 178px;
+    }
+
+    .footer-legals {
+        font-size: 14px;
+        line-height: 1.285;
+    }
+
+    .footer-copy {
+        width: 134px;
+        font-size: 14px;
+        line-height: 1.285;
+    }
 }
 
 @media (min-width: 1280px) {
+    .footer {
+        background-size: 1500px 178px, 255px 1000px;
+    }
 
+    .footer-content {
+        margin-bottom: 50px;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+
+    .footer-address {
+        max-width: none;
+    }
+
+    .footer-socials {
+        gap: 20px;
+    }
+
+    .footer-nav {
+        gap: 20px;
+    }
+
+    .footer-form {
+        gap: 16px;
+    }
+
+    .footer-form-input {
+        max-width: 216px;
+    }
 }
 
 @media (min-width: 1440px) {
-
+    .footer {
+        background-size: 100% 185px, 255px 1000px;
+    }
 }

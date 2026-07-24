@@ -29,10 +29,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 127px;
     padding: 16px 0;
     flex-shrink: 0;
     transition: color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.header-logo > .logo {
+    width: 127px;
+    height: 20px;
 }
 
 .header-logo:focus, .header-logo:hover {
@@ -118,7 +122,7 @@
     text-transform: uppercase;
     border-radius: 14px;
     width: 100%;
-    max-width: 240px;
+    max-width: 187px;
     min-width: 105px;
     padding: 16px;
     transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
@@ -130,8 +134,12 @@
 
 @media (min-width: 767px) {
     .header-logo {
-        width: 123px;
         padding: 21px 0;
+    }
+
+    .header-logo > .logo {
+        width: 123px;
+        height: 16px;
     }
 
     .header-camera-btn {
@@ -163,6 +171,9 @@
 
     .header-burger-btn {
         display: none;
+    }
+    .header-btn{
+        max-width: 240px;
     }
 }
 
