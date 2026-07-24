@@ -125,11 +125,13 @@
     max-width: 187px;
     min-width: 105px;
     padding: 16px;
-    transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1),
+    color 200ms cubic-bezier(0.33, 1, 0.68, 1)
 }
 
 .header-btn:hover, .header-btn:focus {
-    background-color: #bea69e;
+    background-color: #1d1d1d;
+    color: #bea69e;
 }
 
 @media (min-width: 767px) {

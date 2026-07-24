@@ -98,7 +98,7 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-.contacts-policy .underline{
+.contacts-policy .underline-link{
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }

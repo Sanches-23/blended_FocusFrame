@@ -58,6 +58,13 @@
     border-radius: 50%;
     background-color: #1D1D1D;
     color: #777777;
+    transition: background-color 200ms cubic-bezier(0.33, 1, 0.68, 1),
+    color 200ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.courses-icon-box:hover, .courses-icon-box:focus {
+    background-color: #bea69e;
+    color: #ffffff;
 }
 
 .courses-item-icon {
